@@ -1,0 +1,2 @@
+# awtk-widget-vlabel
+vlabel
