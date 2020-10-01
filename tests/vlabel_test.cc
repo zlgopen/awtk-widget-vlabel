@@ -2,7 +2,6 @@
 #include "gtest/gtest.h"
 
 TEST(vlabel, basic) {
-  value_t v;
   widget_t* w = vlabel_create(NULL, 10, 20, 30, 40);
   vlabel_set_right_to_left(w, TRUE);
   ASSERT_EQ(VLABEL(w)->right_to_left, TRUE);

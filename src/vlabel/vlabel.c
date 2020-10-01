@@ -271,7 +271,6 @@ static ret_t vlabel_draw_text(widget_t* widget, canvas_t* c) {
 }
 
 static ret_t vlabel_on_paint_self(widget_t* widget, canvas_t* c) {
-  vlabel_t* vlabel = VLABEL(widget);
   return_value_if_fail(widget->astyle != NULL, RET_BAD_PARAMS);
 
   if (widget->text.size > 0) {
