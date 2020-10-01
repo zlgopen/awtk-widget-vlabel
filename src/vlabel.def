@@ -1,0 +1,9 @@
+LIBRARY   vlabel
+EXPORTS
+    vlabel_register
+    vlabel_supported_render_mode
+    vlabel_line_parser_init
+    vlabel_line_parser_next
+    vlabel_create
+    vlabel_cast
+    vlabel_set_right_to_left

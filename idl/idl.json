@@ -1,0 +1,167 @@
+[
+  {
+    "params": [],
+    "annotation": {
+      "global": true
+    },
+    "desc": "注册控件。",
+    "name": "vlabel_register",
+    "return": {
+      "type": "ret_t",
+      "desc": "返回RET_OK表示成功，否则表示失败。"
+    },
+    "type": "method",
+    "header": "src/vlabel_register.h",
+    "level": 1
+  },
+  {
+    "params": [],
+    "annotation": {
+      "global": true
+    },
+    "desc": "获取支持的渲染模式。",
+    "name": "vlabel_supported_render_mode",
+    "return": {
+      "type": "const char*",
+      "desc": "返回渲染模式。"
+    },
+    "type": "method",
+    "header": "src/vlabel_register.h",
+    "level": 1
+  },
+  {
+    "type": "class",
+    "methods": [
+      {
+        "params": [],
+        "annotation": {},
+        "desc": "",
+        "name": "vlabel_line_parser_init"
+      },
+      {
+        "params": [],
+        "annotation": {},
+        "desc": "",
+        "name": "vlabel_line_parser_next"
+      }
+    ],
+    "events": [],
+    "properties": [],
+    "header": "vlabel/vlabel.h",
+    "desc": "",
+    "name": "vlabel_line_parser_t",
+    "level": 1
+  },
+  {
+    "type": "class",
+    "methods": [
+      {
+        "params": [
+          {
+            "type": "widget_t*",
+            "name": "parent",
+            "desc": "父控件"
+          },
+          {
+            "type": "xy_t",
+            "name": "x",
+            "desc": "x坐标"
+          },
+          {
+            "type": "xy_t",
+            "name": "y",
+            "desc": "y坐标"
+          },
+          {
+            "type": "wh_t",
+            "name": "w",
+            "desc": "宽度"
+          },
+          {
+            "type": "wh_t",
+            "name": "h",
+            "desc": "高度"
+          }
+        ],
+        "annotation": {
+          "constructor": true,
+          "scriptable": true
+        },
+        "desc": "创建vlabel对象",
+        "name": "vlabel_create",
+        "return": {
+          "type": "widget_t*",
+          "desc": "vlabel对象。"
+        }
+      },
+      {
+        "params": [
+          {
+            "type": "widget_t*",
+            "name": "widget",
+            "desc": "vlabel对象。"
+          }
+        ],
+        "annotation": {
+          "cast": true,
+          "scriptable": true
+        },
+        "desc": "转换为vlabel对象(供脚本语言使用)。",
+        "name": "vlabel_cast",
+        "return": {
+          "type": "widget_t*",
+          "desc": "vlabel对象。"
+        }
+      },
+      {
+        "params": [
+          {
+            "type": "widget_t*",
+            "name": "widget",
+            "desc": "widget对象。"
+          },
+          {
+            "type": "bool_t",
+            "name": "right_to_left",
+            "desc": "是否从右向左排列。。"
+          }
+        ],
+        "annotation": {
+          "scriptable": true
+        },
+        "desc": "设置 是否从右向左排列。。",
+        "name": "vlabel_set_right_to_left",
+        "return": {
+          "type": "ret_t",
+          "desc": "返回RET_OK表示成功，否则表示失败。"
+        }
+      }
+    ],
+    "events": [],
+    "properties": [
+      {
+        "name": "right_to_left",
+        "desc": "是否从右向左排列。。",
+        "type": "bool_t",
+        "annotation": {
+          "set_prop": true,
+          "get_prop": true,
+          "readable": true,
+          "persitent": true,
+          "design": true,
+          "scriptable": true
+        }
+      }
+    ],
+    "header": "vlabel/vlabel.h",
+    "desc": "垂直显示文本的控件。\n在xml中使用\"vlabel\"标签创建控件。如：\n\n```xml\n<!-- ui -->\n<vlabel x=\"c\" y=\"50\" w=\"100\" h=\"100\" text=\"国庆快乐！\"/>\n```\n\n可用通过style来设置控件的显示风格，如字体的大小和颜色等等。如：\n\n```xml\n<!-- style -->\n<vlabel>\n<style name=\"default\" font_size=\"32\">\n<normal text_color=\"black\" />\n</style>\n</vlabel>\n```",
+    "name": "vlabel_t",
+    "parent": "widget_t",
+    "annotation": {
+      "scriptable": true,
+      "design": true,
+      "widget": true
+    },
+    "level": 2
+  }
+]

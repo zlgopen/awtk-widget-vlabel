@@ -1,0 +1,35 @@
+<vlabel>
+  <style name="default" font_size="18" bg_color="#eeeeee">
+    <normal text_color="black" />
+  </style>
+  
+  <style name="tl" font_size="18" bg_color="#eeeeee">
+    <normal text_color="black" text_align_v="top" text_align_h="left"/>
+  </style>
+  <style name="ml" font_size="18" bg_color="#eeeeee">
+    <normal text_color="black" text_align_v="middle" text_align_h="left"/>
+  </style>
+  <style name="bl" font_size="18" bg_color="#eeeeee">
+    <normal text_color="black" text_align_v="bottom" text_align_h="left"/>
+  </style>
+  
+  <style name="tc" font_size="18" bg_color="#eeeeee">
+    <normal text_color="black" text_align_v="top" text_align_h="center"/>
+  </style>
+  <style name="mc" font_size="18" bg_color="#eeeeee">
+    <normal text_color="black" text_align_v="middle" text_align_h="center"/>
+  </style>
+  <style name="bc" font_size="18" bg_color="#eeeeee">
+    <normal text_color="black" text_align_v="bottom" text_align_h="center"/>
+  </style>
+  
+  <style name="tr" font_size="18" bg_color="#eeeeee">
+    <normal text_color="black" text_align_v="top" text_align_h="right"/>
+  </style>
+  <style name="mr" font_size="18" bg_color="#eeeeee">
+    <normal text_color="black" text_align_v="middle" text_align_h="right"/>
+  </style>
+  <style name="br" font_size="18" bg_color="#eeeeee">
+    <normal text_color="black" text_align_v="bottom" text_align_h="right"/>
+  </style>
+</vlabel>

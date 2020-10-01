@@ -1,0 +1,22 @@
+<window theme="main" >
+  <view x="c" y="m" w="100%" h="100%" children_layout="default(r=3,c=5,s=10,m=10)">
+    <vlabel style="tl" text="国庆快乐！\n中秋快乐！\n提供一个功能强大、高效可靠、简单易用、可轻松做出炫酷效果的GUI引擎。\n主要特色"/>
+    <vlabel style="ml" text="国庆快乐！\n提供一个功能强大、高效可靠、简单易用、可轻松做出炫酷效果的GUI引擎。"/>
+    <vlabel style="bl" text="国庆快乐！\n提供一个功能强大、高效可靠、简单易用、可轻松做出炫酷效果的GUI引擎。"/>
+    <vlabel style="tl" text="国庆快乐！\n中秋快乐！" right_to_left="true"/>
+    <vlabel style="tl" text="提供一个功能强大、高效可靠、简单易用、可轻松做出炫酷效果的GUI引擎。" right_to_left="true"/>
+
+    <vlabel style="tc" text="国庆快乐！\n中秋快乐！"/>
+    <vlabel style="mc" text="国庆快乐！"/>
+    <vlabel style="bc" text="国庆快乐！"/>
+    <vlabel style="tc" text="国庆快乐！\n中秋快乐！" right_to_left="true"/>
+    <vlabel style="mc" text="国庆快乐！\n中秋快乐！\r提供一个功能强大、高效可靠、简单易用、可轻松做出炫酷效果的GUI引擎。\n主要特色" right_to_left="true"/>
+
+    <vlabel style="tr" text="国庆快乐！\n中秋快乐！"/>
+    <vlabel style="mr" text="国庆快乐！"/>
+    <vlabel style="br" text="国庆快乐！"/>
+    <vlabel style="tr" text="国庆快乐！\n中秋快乐！" right_to_left="true"/>
+    <vlabel style="bc" text="国庆快乐！\n中秋快乐！\r\n提供一个功能强大、高效可靠、简单易用、可轻松做出炫酷效果的GUI引擎。\n主要特色" right_to_left="true"/>    
+  </view>
+  <button x="c" y="b:10" w="128" h="36" name="close" text="Close"/>
+</window>
